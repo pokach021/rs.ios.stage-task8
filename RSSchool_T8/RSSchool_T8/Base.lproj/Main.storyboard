@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y7y-a8-Umr">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Artist-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRF-bd-ozL" customClass="CustomButton">
+                                <rect key="frame" x="20" y="649" width="202" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="VrR-UB-fle"/>
+                                    <constraint firstAttribute="height" constant="32" id="kdJ-N1-7Lk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Open Palette">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="openPaletteButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dig-vX-wbk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTd-Yw-yiN" customClass="CustomButton">
+                                <rect key="frame" x="20" y="701" width="190" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="NpD-Yt-np6"/>
+                                    <constraint firstAttribute="width" constant="151" id="UmV-zL-OeU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                <state key="normal" title="Open Timer">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="timerButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDz-DI-Syv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0t-Oo-ie9" customClass="CustomButton">
+                                <rect key="frame" x="282" y="649" width="91" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ckT-0Q-fzM"/>
+                                    <constraint firstAttribute="width" constant="91" id="qft-RQ-OfY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Draw">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="drawButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KVF-wW-bfe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tbt-Qu-mem" customClass="CustomButton">
+                                <rect key="frame" x="278" y="701" width="95" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="ieE-UC-qwg"/>
+                                    <constraint firstAttribute="width" constant="95" id="rvD-fL-ZTj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at3-1R-G9B" customClass="CustomView">
+                                <rect key="frame" x="38" y="128" width="339" height="471"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="UFk-pe-hbH"/>
+                                    <constraint firstAttribute="width" constant="300" id="ZH8-ye-Yzw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="at3-1R-G9B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="040-Dy-cdP"/>
+                            <constraint firstItem="h0t-Oo-ie9" firstAttribute="leading" secondItem="tRF-bd-ozL" secondAttribute="trailing" constant="60" id="04y-yv-lMO"/>
+                            <constraint firstItem="at3-1R-G9B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="4Z0-XR-LI9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="at3-1R-G9B" secondAttribute="trailing" constant="37" id="A9K-vF-HHJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Tbt-Qu-mem" secondAttribute="bottom" constant="129" id="BAT-hW-xR4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tbt-Qu-mem" secondAttribute="trailing" constant="41" id="K5a-bq-ftd"/>
+                            <constraint firstItem="Tbt-Qu-mem" firstAttribute="leading" secondItem="fTd-Yw-yiN" secondAttribute="trailing" constant="68" id="MzA-LR-Pax"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="at3-1R-G9B" secondAttribute="bottom" constant="263" id="O2S-WX-qX2"/>
+                            <constraint firstItem="fTd-Yw-yiN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QbW-b0-Lu9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fTd-Yw-yiN" secondAttribute="bottom" constant="129" id="SST-ma-5Bz"/>
+                            <constraint firstItem="tRF-bd-ozL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TOd-Eh-sAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h0t-Oo-ie9" secondAttribute="trailing" constant="41" id="cro-Hx-C5a"/>
+                            <constraint firstItem="Tbt-Qu-mem" firstAttribute="top" secondItem="h0t-Oo-ie9" secondAttribute="bottom" constant="20" id="tnv-Yh-gsE"/>
+                            <constraint firstItem="fTd-Yw-yiN" firstAttribute="top" secondItem="tRF-bd-ozL" secondAttribute="bottom" constant="20" id="zZd-pi-nQn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Artist" leftItemsSupplementBackButton="YES" id="Qhg-xl-B3S">
+                        <barButtonItem key="rightBarButtonItem" title="Drawings" id="u0a-o6-8tb">
+                            <connections>
+                                <segue destination="2Ol-VA-7vz" kind="show" id="ZYt-gz-dxY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2868.115942028986" y="52.901785714285715"/>
+        </scene>
+        <!--Drawings-->
+        <scene sceneID="Gzv-Mh-jII">
+            <objects>
+                <viewController id="2Ol-VA-7vz" customClass="DrawingViewController" customModule="RSSchool_T8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zK4-8x-mie">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyL-MA-FPf" customClass="CustomButton">
+                                <rect key="frame" x="88" y="138" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HCO-As-C0h"/>
+                                    <constraint firstAttribute="height" constant="40" id="pNg-ow-bWq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Planet">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="planetButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="rHA-xK-DrO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-rk-tuf" customClass="CustomButton">
+                                <rect key="frame" x="88" y="193" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FaD-0N-bN2"/>
+                                    <constraint firstAttribute="width" constant="200" id="xhY-pO-WU0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Head">
+                                    <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="headButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="iIm-Uu-RKV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-SH-4ko" customClass="CustomButton">
+                                <rect key="frame" x="88" y="303" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="X0v-ek-U8H"/>
+                                    <constraint firstAttribute="width" constant="200" id="duo-37-avo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Landscape">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="landscapeButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="8MJ-pV-Kd9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwd-8c-mh8" customClass="CustomButton">
+                                <rect key="frame" x="88" y="248" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Aeo-0B-MPs"/>
+                                    <constraint firstAttribute="width" constant="200" id="XVO-ZJ-CXW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                <state key="normal" title="Tree">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="TreeButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="b0t-Qw-ovX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="n6i-RG-wSf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Vwd-8c-mh8" firstAttribute="leading" secondItem="eyL-MA-FPf" secondAttribute="leading" id="3i5-UJ-7Bb"/>
+                            <constraint firstItem="Vwd-8c-mh8" firstAttribute="top" secondItem="AeC-rk-tuf" secondAttribute="bottom" constant="15" id="Bdg-ZL-MSA"/>
+                            <constraint firstItem="2PA-SH-4ko" firstAttribute="leading" secondItem="eyL-MA-FPf" secondAttribute="leading" id="C1s-xD-EG2"/>
+                            <constraint firstItem="eyL-MA-FPf" firstAttribute="top" secondItem="n6i-RG-wSf" secondAttribute="top" constant="50" id="DVs-1L-6Dp"/>
+                            <constraint firstItem="2PA-SH-4ko" firstAttribute="top" secondItem="Vwd-8c-mh8" secondAttribute="bottom" constant="15" id="FQG-7k-CSh"/>
+                            <constraint firstItem="n6i-RG-wSf" firstAttribute="trailing" secondItem="eyL-MA-FPf" secondAttribute="trailing" constant="87" id="M6h-rd-WnH"/>
+                            <constraint firstItem="2PA-SH-4ko" firstAttribute="trailing" secondItem="eyL-MA-FPf" secondAttribute="trailing" id="RDQ-wL-07p"/>
+                            <constraint firstItem="AeC-rk-tuf" firstAttribute="leading" secondItem="eyL-MA-FPf" secondAttribute="leading" id="VC6-I7-OIE"/>
+                            <constraint firstItem="AeC-rk-tuf" firstAttribute="top" secondItem="eyL-MA-FPf" secondAttribute="bottom" constant="15" id="YJS-Q0-fK9"/>
+                            <constraint firstItem="eyL-MA-FPf" firstAttribute="leading" secondItem="n6i-RG-wSf" secondAttribute="leading" constant="88" id="a6d-lB-VVB"/>
+                            <constraint firstItem="AeC-rk-tuf" firstAttribute="trailing" secondItem="eyL-MA-FPf" secondAttribute="trailing" id="dH1-vw-Yf7"/>
+                            <constraint firstItem="Vwd-8c-mh8" firstAttribute="trailing" secondItem="eyL-MA-FPf" secondAttribute="trailing" id="oRR-Hh-cef"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drawings" id="Abm-Q8-p2V"/>
+                    <connections>
+                        <outlet property="headButton" destination="AeC-rk-tuf" id="Zlc-wG-1oJ"/>
+                        <outlet property="landscapeButton" destination="2PA-SH-4ko" id="6ci-EQ-Qlp"/>
+                        <outlet property="planetButton" destination="eyL-MA-FPf" id="aqT-1i-2n3"/>
+                        <outlet property="treeButton" destination="Vwd-8c-mh8" id="oso-rm-Udp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iMy-mh-fay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3806" y="53"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aX3-bD-qfy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y7y-a8-Umr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4jg-TM-zTm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="OrK-Hz-yNR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZD0-CI-kGE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="52.901785714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
