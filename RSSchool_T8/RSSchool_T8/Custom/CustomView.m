@@ -12,8 +12,18 @@
 
 @implementation CustomView
 
-- (void) commonInit {
-   
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.shape1Layer = [[CAShapeLayer alloc] init];
+        self.shape2Layer = [[CAShapeLayer alloc] init];
+        self.shape3Layer = [[CAShapeLayer alloc] init];
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
     self.layer.cornerRadius = 8;
     self.layer.shadowColor = [[UIColor chillSky]colorWithAlphaComponent:0.25].CGColor;
     self.layer.shadowRadius = 8;
@@ -22,29 +32,7 @@
     self.layer.masksToBounds = NO;
     self.layer.backgroundColor = [UIColor whiteColor].CGColor;
     
-    
 }
 
-- (id)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        self.shape1Layer = [[CAShapeLayer alloc] init];
-        self.shape2Layer = [[CAShapeLayer alloc] init];
-        self.shape3Layer = [[CAShapeLayer alloc] init];
-        [self commonInit];
-    }
-    return self;
- }
-
- - (id)initWithCoder:(NSCoder *)aDecoder {
-     self = [super initWithCoder:aDecoder];
-     if (self) {
-         self.shape1Layer = [[CAShapeLayer alloc] init];
-         self.shape2Layer = [[CAShapeLayer alloc] init];
-         self.shape3Layer = [[CAShapeLayer alloc] init];
-        [self commonInit];
-     }
-     return self;
- }
 @end
 

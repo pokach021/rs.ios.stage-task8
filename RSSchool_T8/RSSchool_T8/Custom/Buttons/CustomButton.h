@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomButton : UIButton
 
+- (void)setHighlightedTint;
+- (void)setDefaultTint;
+- (void)setDisabledTint;
+
 @end
 
 NS_ASSUME_NONNULL_END

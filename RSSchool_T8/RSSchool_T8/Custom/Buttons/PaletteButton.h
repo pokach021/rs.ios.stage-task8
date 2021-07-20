@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PaletteViewController.h"
-#import "ColorDelegate.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 

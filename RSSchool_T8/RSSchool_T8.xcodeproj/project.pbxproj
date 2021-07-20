@@ -20,16 +20,17 @@
 		D93EE98426A406500031BD7A /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D93EE98226A406500031BD7A /* Montserrat-Regular.ttf */; };
 		D93EE98926A407C40031BD7A /* CustomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EE98826A407C40031BD7A /* CustomButton.m */; };
 		D93EE98D26A408070031BD7A /* UIColor+ColorSet.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EE98C26A408070031BD7A /* UIColor+ColorSet.m */; };
-		D94A0D1826A4614600C178D9 /* TimerViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = D94A0D1726A4614600C178D9 /* TimerViewController1.m */; };
 		D972287126A550170048BC8E /* PaletteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D972287026A550170048BC8E /* PaletteButton.m */; };
+		D97FA4F626A6A47E00FC8405 /* PaletteButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA4F526A6A47E00FC8405 /* PaletteButtonView.m */; };
+		D97FA4FA26A6A63500FC8405 /* CustomView+Planet.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA4F926A6A63500FC8405 /* CustomView+Planet.m */; };
+		D97FA4FE26A6A6A500FC8405 /* CustomView+Tree.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA4FD26A6A6A500FC8405 /* CustomView+Tree.m */; };
+		D97FA50226A6A6F900FC8405 /* CustomView+Head.m in Sources */ = {isa = PBXBuildFile; fileRef = D97FA50126A6A6F900FC8405 /* CustomView+Head.m */; };
 		D9BCE45626A42EFA00095283 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BCE45526A42EFA00095283 /* CustomView.m */; };
 		D9BCE47026A450BB00095283 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9BCE46F26A450BB00095283 /* PaletteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D90DFAEC26A5706200FBF762 /* PaintingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaintingDelegate.h; sourceTree = "<group>"; };
 		D90DFAF026A5722200FBF762 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
-		D90DFAF326A5732100FBF762 /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
 		D90DFAF626A5819D00FBF762 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		D90DFAFD26A5EABE00FBF762 /* CustomView+Landscape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView+Landscape.h"; sourceTree = "<group>"; };
 		D90DFAFE26A5EABE00FBF762 /* CustomView+Landscape.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CustomView+Landscape.m"; sourceTree = "<group>"; };
@@ -49,15 +50,21 @@
 		D93EE98826A407C40031BD7A /* CustomButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomButton.m; sourceTree = "<group>"; };
 		D93EE98B26A408070031BD7A /* UIColor+ColorSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorSet.h"; sourceTree = "<group>"; };
 		D93EE98C26A408070031BD7A /* UIColor+ColorSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorSet.m"; sourceTree = "<group>"; };
-		D94A0D1626A4614600C178D9 /* TimerViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController1.h; sourceTree = "<group>"; };
-		D94A0D1726A4614600C178D9 /* TimerViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController1.m; sourceTree = "<group>"; };
 		D972286F26A550170048BC8E /* PaletteButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteButton.h; sourceTree = "<group>"; };
 		D972287026A550170048BC8E /* PaletteButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteButton.m; sourceTree = "<group>"; };
-		D972287326A552F90048BC8E /* ColorDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorDelegate.h; sourceTree = "<group>"; };
+		D97FA4F426A6A47E00FC8405 /* PaletteButtonView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteButtonView.h; sourceTree = "<group>"; };
+		D97FA4F526A6A47E00FC8405 /* PaletteButtonView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteButtonView.m; sourceTree = "<group>"; };
+		D97FA4F826A6A63500FC8405 /* CustomView+Planet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView+Planet.h"; sourceTree = "<group>"; };
+		D97FA4F926A6A63500FC8405 /* CustomView+Planet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CustomView+Planet.m"; sourceTree = "<group>"; };
+		D97FA4FC26A6A6A500FC8405 /* CustomView+Tree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView+Tree.h"; sourceTree = "<group>"; };
+		D97FA4FD26A6A6A500FC8405 /* CustomView+Tree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CustomView+Tree.m"; sourceTree = "<group>"; };
+		D97FA50026A6A6F900FC8405 /* CustomView+Head.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomView+Head.h"; sourceTree = "<group>"; };
+		D97FA50126A6A6F900FC8405 /* CustomView+Head.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CustomView+Head.m"; sourceTree = "<group>"; };
 		D9BCE45426A42EFA00095283 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		D9BCE45526A42EFA00095283 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 		D9BCE46E26A450BB00095283 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
 		D9BCE46F26A450BB00095283 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		D9E0F3FF26A73B8500BB973A /* RSSchool_T8-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T8-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,12 @@
 			children = (
 				D90DFAFD26A5EABE00FBF762 /* CustomView+Landscape.h */,
 				D90DFAFE26A5EABE00FBF762 /* CustomView+Landscape.m */,
+				D97FA4F826A6A63500FC8405 /* CustomView+Planet.h */,
+				D97FA4F926A6A63500FC8405 /* CustomView+Planet.m */,
+				D97FA4FC26A6A6A500FC8405 /* CustomView+Tree.h */,
+				D97FA4FD26A6A6A500FC8405 /* CustomView+Tree.m */,
+				D97FA50026A6A6F900FC8405 /* CustomView+Head.h */,
+				D97FA50126A6A6F900FC8405 /* CustomView+Head.m */,
 			);
 			path = Pictures;
 			sourceTree = "<group>";
@@ -135,31 +148,37 @@
 		D93EE98626A407970031BD7A /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				D93EE98726A407C40031BD7A /* CustomButton.h */,
-				D93EE98826A407C40031BD7A /* CustomButton.m */,
+				D97FA4F326A6A43F00FC8405 /* Buttons */,
 				D93EE98B26A408070031BD7A /* UIColor+ColorSet.h */,
 				D93EE98C26A408070031BD7A /* UIColor+ColorSet.m */,
 				D9BCE45426A42EFA00095283 /* CustomView.h */,
 				D9BCE45526A42EFA00095283 /* CustomView.m */,
-				D972286F26A550170048BC8E /* PaletteButton.h */,
-				D972287026A550170048BC8E /* PaletteButton.m */,
-				D972287326A552F90048BC8E /* ColorDelegate.h */,
-				D90DFAEC26A5706200FBF762 /* PaintingDelegate.h */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		D97FA4F326A6A43F00FC8405 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D93EE98726A407C40031BD7A /* CustomButton.h */,
+				D93EE98826A407C40031BD7A /* CustomButton.m */,
+				D972286F26A550170048BC8E /* PaletteButton.h */,
+				D972287026A550170048BC8E /* PaletteButton.m */,
+				D97FA4F426A6A47E00FC8405 /* PaletteButtonView.h */,
+				D97FA4F526A6A47E00FC8405 /* PaletteButtonView.m */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		D9BCE46D26A4509F00095283 /* VC */ = {
 			isa = PBXGroup;
 			children = (
 				D90DFAEE26A571FD00FBF762 /* Swift */,
-				D90DFAF326A5732100FBF762 /* RSSchool_T8-Bridging-Header.h */,
+				D9E0F3FF26A73B8500BB973A /* RSSchool_T8-Bridging-Header.h */,
 				D93EE96A26A404AC0031BD7A /* ViewController.h */,
 				D93EE96B26A404AC0031BD7A /* ViewController.m */,
 				D9BCE46E26A450BB00095283 /* PaletteViewController.h */,
 				D9BCE46F26A450BB00095283 /* PaletteViewController.m */,
-				D94A0D1626A4614600C178D9 /* TimerViewController1.h */,
-				D94A0D1726A4614600C178D9 /* TimerViewController1.m */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -236,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94A0D1826A4614600C178D9 /* TimerViewController1.m in Sources */,
 				D93EE98926A407C40031BD7A /* CustomButton.m in Sources */,
 				D93EE98D26A408070031BD7A /* UIColor+ColorSet.m in Sources */,
 				D9BCE47026A450BB00095283 /* PaletteViewController.m in Sources */,
@@ -245,9 +263,13 @@
 				D972287126A550170048BC8E /* PaletteButton.m in Sources */,
 				D93EE97726A404AC0031BD7A /* main.m in Sources */,
 				D9BCE45626A42EFA00095283 /* CustomView.m in Sources */,
+				D97FA4FA26A6A63500FC8405 /* CustomView+Planet.m in Sources */,
+				D97FA4F626A6A47E00FC8405 /* PaletteButtonView.m in Sources */,
 				D90DFAFF26A5EABE00FBF762 /* CustomView+Landscape.m in Sources */,
 				D90DFAF726A5819D00FBF762 /* TimerViewController.swift in Sources */,
 				D90DFAF126A5722200FBF762 /* DrawingViewController.swift in Sources */,
+				D97FA4FE26A6A6A500FC8405 /* CustomView+Tree.m in Sources */,
+				D97FA50226A6A6F900FC8405 /* CustomView+Head.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +351,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
@@ -382,6 +405,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};

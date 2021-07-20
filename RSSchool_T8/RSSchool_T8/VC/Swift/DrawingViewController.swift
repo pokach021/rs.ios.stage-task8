@@ -7,35 +7,40 @@
 
 import UIKit
 
+@objc public protocol DrawingsDelegate {
+    func updateDrawingWith(drawing: NSString)
+}
+
 class DrawingViewController: UIViewController {
     
-    @IBOutlet weak var planetButton: CustomButton!
-    @IBOutlet weak var headButton: CustomButton!
-    @IBOutlet weak var treeButton: CustomButton!
-    @IBOutlet weak var landscapeButton: CustomButton!
     
-    @objc var drawingView = CustomView()
-    @objc var delegate = ViewController()
+    @IBOutlet var allButtons: [CustomButton]!
+    
+    
+    @objc public var selectedDrawing: NSString!
+    @objc public weak var delegate: DrawingsDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let selectedButton = allButtons.first { $0.titleLabel?.text == selectedDrawing as String }!
+        selectedButton.setHighlightedTint()
+    }
+    
+    public override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        delegate.updateDrawingWith(drawing: NSString(string: selectedDrawing))
+    }
+    
+    @IBAction func allButtonsTapped(_ sender: CustomButton) {
+        allButtons.filter { $0 != sender }.forEach { $0.setDefaultTint() }
+        sender.setHighlightedTint()
+        selectedDrawing = sender.titleLabel!.text! as NSString
         
     }
     
-    @IBAction func planetButtonTap(_ sender: Any) {
-        print("TAP PLANET")
-        self.planetButton.isSelected = true;
-    }
-    @IBAction func headButtonTap(_ sender: Any) {
-        
-    }
-    @IBAction func TreeButtonTap(_ sender: Any) {
-        
-    }
-    @IBAction func landscapeButtonTap(_ sender: Any) {
-        
-    }
+    
+    
+    
     
     
     

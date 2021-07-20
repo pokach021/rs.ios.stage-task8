@@ -8,8 +8,14 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol PaletteDelegate <NSObject>
+- (void)paletteDidPick:(NSMutableOrderedSet<UIColor *>*)colors;
+@end
 
 @interface PaletteViewController : UIViewController
+
+@property NSMutableOrderedSet<UIColor *>* pickedColors;
+@property(weak) id<PaletteDelegate> delegate;
 
 @end
 

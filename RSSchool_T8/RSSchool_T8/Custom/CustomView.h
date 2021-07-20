@@ -7,13 +7,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
-#import "PaintingDelegate.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CustomView : UIView
-
-@property (assign, nonatomic) NSNumber *currentDrawing;
 
 @property CAShapeLayer *shape1Layer;
 @property CAShapeLayer *shape2Layer;

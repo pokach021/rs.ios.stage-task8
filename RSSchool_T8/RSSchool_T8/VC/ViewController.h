@@ -6,9 +6,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PaletteViewController.h"
+#import "RSSchool_T8-Swift.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIViewControllerTransitioningDelegate, TimerDelegate, DrawingsDelegate>
 
+@property(nonatomic, copy) NSOrderedSet<UIColor *>* pickedColors;
+@property float timerValue;
+@property(nonatomic, copy) NSString *drawing;
+@property(nonatomic, copy) NSTimer  *redrawTimer;
 
 @end
 

@@ -74,6 +74,9 @@
                                 <state key="normal" title="Share">
                                     <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="shareButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mbM-Zu-IUF"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="at3-1R-G9B" customClass="CustomView">
                                 <rect key="frame" x="38" y="128" width="339" height="471"/>
@@ -105,11 +108,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="Artist" leftItemsSupplementBackButton="YES" id="Qhg-xl-B3S">
                         <barButtonItem key="rightBarButtonItem" title="Drawings" id="u0a-o6-8tb">
+                            <color key="tintColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="2Ol-VA-7vz" kind="show" id="ZYt-gz-dxY"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="canvas" destination="at3-1R-G9B" id="50N-F4-ldg"/>
+                        <outlet property="drawButton" destination="h0t-Oo-ie9" id="fwb-lV-qSg"/>
+                        <outlet property="drawingsButton" destination="u0a-o6-8tb" id="kfw-2f-8qA"/>
+                        <outlet property="paletteButton" destination="tRF-bd-ozL" id="i5l-jL-MJY"/>
+                        <outlet property="shareButton" destination="Tbt-Qu-mem" id="KCP-dJ-gaU"/>
+                        <outlet property="timerButton" destination="fTd-Yw-yiN" id="tFS-Rd-7O0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +146,7 @@
                                     <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="planetButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="rHA-xK-DrO"/>
+                                    <action selector="allButtonsTapped:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="kx6-bX-hHR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AeC-rk-tuf" customClass="CustomButton">
@@ -148,7 +160,7 @@
                                     <color key="titleColor" red="0.12941176470588234" green="0.69019607843137254" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="headButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="iIm-Uu-RKV"/>
+                                    <action selector="allButtonsTapped:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="pim-jX-09m"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PA-SH-4ko" customClass="CustomButton">
@@ -162,7 +174,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="landscapeButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="8MJ-pV-Kd9"/>
+                                    <action selector="allButtonsTapped:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="opK-gs-bSj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwd-8c-mh8" customClass="CustomButton">
@@ -176,7 +188,7 @@
                                     <color key="titleColor" red="0.12941176469999999" green="0.69019607839999997" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="TreeButtonTap:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="b0t-Qw-ovX"/>
+                                    <action selector="allButtonsTapped:" destination="2Ol-VA-7vz" eventType="touchUpInside" id="eq7-A1-FTx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -197,12 +209,12 @@
                             <constraint firstItem="Vwd-8c-mh8" firstAttribute="trailing" secondItem="eyL-MA-FPf" secondAttribute="trailing" id="oRR-Hh-cef"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Drawings" id="Abm-Q8-p2V"/>
+                    <navigationItem key="navigationItem" title="Drawings" leftItemsSupplementBackButton="YES" id="Abm-Q8-p2V"/>
                     <connections>
-                        <outlet property="headButton" destination="AeC-rk-tuf" id="Zlc-wG-1oJ"/>
-                        <outlet property="landscapeButton" destination="2PA-SH-4ko" id="6ci-EQ-Qlp"/>
-                        <outlet property="planetButton" destination="eyL-MA-FPf" id="aqT-1i-2n3"/>
-                        <outlet property="treeButton" destination="Vwd-8c-mh8" id="oso-rm-Udp"/>
+                        <outletCollection property="allButtons" destination="AeC-rk-tuf" collectionClass="NSMutableArray" id="op3-aL-Z0x"/>
+                        <outletCollection property="allButtons" destination="eyL-MA-FPf" collectionClass="NSMutableArray" id="xAg-8u-YYp"/>
+                        <outletCollection property="allButtons" destination="Vwd-8c-mh8" collectionClass="NSMutableArray" id="nKj-36-JTL"/>
+                        <outletCollection property="allButtons" destination="2PA-SH-4ko" collectionClass="NSMutableArray" id="96b-dM-y5y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iMy-mh-fay" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
